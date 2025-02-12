@@ -79,7 +79,6 @@ export default function Hero() {
             based in Italy <span className="text-primary">.</span>
           </h3>
         </motion.div>
-
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
