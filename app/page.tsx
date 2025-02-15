@@ -1,6 +1,9 @@
 import About from "@/components/about";
+import Contacts from "@/components/contacts";
+
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import Projects from "@/components/projects";
 import { DotPattern } from "@/components/ui/dot-pattern";
 
 export default function Home() {
@@ -10,6 +13,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Projects />
+      <Contacts />
     </div>
   );
 }

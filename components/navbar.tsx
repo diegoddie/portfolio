@@ -13,23 +13,19 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [activeItem, setActiveItem] = useState("Home");
 
+  const dockItems = [
+    { icon: Home, label: "Home", href: "#home" },
+    { icon: Info, label: "About", href: "#about" },
+    { icon: Folder, label: "Projects", href: "#projects" },
+    { icon: Mail, label: "Contacts", href: "#contacts" },
+    { icon: Download, label: "Download CV", href:"/Resume.pdf", targetBlank: true },
+  ];
+
   const navItems = [
     { icon: Home, label: "Home", href: "#home" },
     { icon: Info, label: "About", href: "#about" },
     { icon: Folder, label: "Projects", href: "#projects" },
-    { icon: Mail, label: "Contact", href: "#contact" },
-  ];
-
-  const dockItems = [
-    ...navItems,
-    {
-      icon: Download,
-      label: "Download CV",
-      onClick: () => {
-        // Add your download CV logic here
-        console.log("Download CV clicked");
-      },
-    },
+    { icon: Mail, label: "Contacts", href: "#contacts" },
   ];
 
   return (
@@ -107,10 +103,10 @@ const Navbar = () => {
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button className="hidden md:inline-flex text-lg py-6 px-6">
-              Download CV
-              <Download className="ml-1 h-6 w-6 font-bold" />
-            </Button>
+            <Link className="bg-primary text-primary-foreground shadow hover:bg-primary/90 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hidden md:inline-flex text-lg h-9 px-6 py-6 " href="/Resume.pdf" download target="_blank">
+                Download CV
+                <Download className="ml-1 h-6 w-6 font-bold" />
+            </Link>
           </div>
         </div>
       </div>

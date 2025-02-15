@@ -14,6 +14,7 @@ interface DockProps {
     href?: string
     onClick?: () => void
   }[]
+  targetBlank?: boolean
 }
 
 interface DockIconButtonProps {
@@ -22,6 +23,7 @@ interface DockIconButtonProps {
   href?: string
   onClick?: () => void
   className?: string
+  targetBlank?: boolean
 }
 
 const floatingAnimation = {
@@ -37,7 +39,7 @@ const floatingAnimation = {
 }
 
 const DockIconButton = React.forwardRef<HTMLButtonElement, DockIconButtonProps>(
-  ({ icon: Icon, label, href, onClick, className }, ref) => {
+  ({ icon: Icon, label, href, targetBlank, onClick, className }, ref) => {
     const ButtonContent = (
       <>
         <Icon className="w-5 h-5 text-foreground" />
@@ -55,7 +57,7 @@ const DockIconButton = React.forwardRef<HTMLButtonElement, DockIconButtonProps>(
 
     if (href) {
       return (
-        <Link href={href} className={cn(
+        <Link target={targetBlank ? "_blank" : undefined} href={href} className={cn(
           "relative group p-3 rounded-lg",
           "hover:bg-secondary transition-colors",
           className

@@ -3,25 +3,18 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
 import { motion } from "framer-motion";
 import hero from "@/public/hero-image.png";
 import { GlowEffect } from "./ui/glow-effect";
 import { Badge } from "./ui/badge";
 import { Dock } from "./ui/dock-two";
+import { socialItems } from "@/lib/social";
 
 export default function Hero() {
-  const socialItems = [
-    { icon: FaGithub, label: "Github" },
-    { icon: FaLinkedin, label: "Linkedin" },
-    { icon: IoMdMail, label: "Mail" },
-    { icon: FaXTwitter, label: "Twitter" },
-  ];
+  
   return (
     <section
-      className="md:flex-grow flex justify-center items-center py-4"
+      className="md:flex-grow flex justify-center items-center py-6"
       id="home"
     >
       <div className="container mx-auto px-4 text-center space-y-8 md:space-y-10">
@@ -39,7 +32,7 @@ export default function Hero() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative mx-auto h-40 w-40 md:h-64 md:w-64 rounded-full"
+          className="relative mx-auto h-40 w-40 md:h-72 md:w-72 rounded-full"
         >
           <GlowEffect
             colors={["#FF5733", "#33FF57", "#3357FF", "#F1C40F"]}
@@ -48,7 +41,7 @@ export default function Hero() {
             duration={5}
             className="rounded-full"
           />
-          <div className="relative h-40 w-40 md:h-64 md:w-64 rounded-full">
+          <div className="relative h-40 w-40 md:h-72 md:w-72 rounded-full">
             <Image
               src={hero}
               alt="Profile"
@@ -64,7 +57,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="text-3xl md:text-6xl font-bold tracking-tight">
             a{" "}
             <span className="relative inline-block px-1 md:px-5 py-1 md:py-3">
               {/* Rettangolo inclinato */}
@@ -75,7 +68,7 @@ export default function Hero() {
               </span>
             </span>
           </h1>
-          <h3 className="text-3xl md:text-5xl font-bold pt-2 md:pt-5 tracking-wide">
+          <h3 className="text-2xl md:text-5xl font-bold pt-2 md:pt-5 tracking-wide">
             based in Italy <span className="text-primary">.</span>
           </h3>
         </motion.div>
