@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import hero from "@/public/hero-image.png";
