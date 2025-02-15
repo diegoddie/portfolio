@@ -9,6 +9,7 @@ import { GlowEffect } from "./ui/glow-effect";
 import { Badge } from "./ui/badge";
 import { Dock } from "./ui/dock-two";
 import { socialItems } from "@/lib/social";
+import Link from "next/link";
 
 export default function Hero() {
   
@@ -87,13 +88,13 @@ export default function Hero() {
               duration={3}
               className="absolute inset-0 z-0 rounded-lg"
             />
-            <Button
-              className="text-lg py-6 px-6 relative group"
-              variant={"secondary"}
+            <Link
+              className="h-9 bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-lg py-6 px-6 relative group"
+              href="mailto:diego.boost@gmail.com"
             >
               Contact Me
               <ArrowRight className="h-4 w-4 font-bold group-hover:ml-2 transition-all duration-500" />
-            </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
