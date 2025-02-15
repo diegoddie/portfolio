@@ -58,7 +58,7 @@ export default function About() {
                   <div className="space-y-6 py-7">
                     <div>
                       <h4 className="text-lg">
-                        Master's in Full Stack Development
+                        Master&apos;s in Full Stack Development
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400 text-sm">
                         2023 - 2024 | Start2Impact University
@@ -74,7 +74,7 @@ export default function About() {
                     </div>
                     <div>
                       <h4 className="text-lg">
-                        Master's in Blockchain Development
+                        Master&apos;s in Blockchain Development
                       </h4>
                       <p className="text-slate-600 dark:text-slate-400 text-sm">
                         2022 - 2023 | Start2Impact University
@@ -94,9 +94,9 @@ export default function About() {
                   </div>
                   <div className="flex flex-col h-full text-center">
                     <p className="text-md md:text-lg tracking-wider leading-relaxed font-light">
-                      "I'm 26 years old and have always been passionate about technology, especially blockchain and programming. I enjoy tackling challenges, finding creative solutions, and building new things."
+                      &quot;I&apos;m 26 years old and have always been passionate about technology, especially blockchain and programming. I enjoy tackling challenges, finding creative solutions, and building new things.
                       <br />
-                      "By the way, I enjoy coffee. A lot."
+                      By the way, I enjoy coffee. A lot.
                     </p>
                   </div>
                 </Card>
