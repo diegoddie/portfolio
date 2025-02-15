@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Loader, Mail, Send } from "lucide-react";
-import { useFormStatus } from "react-dom";
+import { Loader, Send } from "lucide-react";
 
 export function SubmitButton({ isLoading }: { isLoading: boolean }) {
   return (

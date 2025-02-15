@@ -21,8 +21,8 @@ export default function Projects() {
           </Badge>
           <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
           <p className="mx-auto md:text-xl/relaxed text-gray-500 dark:text-gray-400">
-            Here are some of the projects I've worked on. Each one presented unique challenges and opportunities for
-            growth.
+            "Here are some of the projects I've worked on. Each one presented unique challenges and opportunities for
+            growth."
           </p>
         </div>
 

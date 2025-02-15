@@ -94,9 +94,9 @@ export default function About() {
                   </div>
                   <div className="flex flex-col h-full text-center">
                     <p className="text-md md:text-lg tracking-wider leading-relaxed font-light">
-                      I'm 26 years old and have always been passionate about technology, especially blockchain and programming. I enjoy tackling challenges, finding creative solutions, and building new things.
+                      "I'm 26 years old and have always been passionate about technology, especially blockchain and programming. I enjoy tackling challenges, finding creative solutions, and building new things."
                       <br />
-                      By the way, I enjoy coffee. A lot.
+                      "By the way, I enjoy coffee. A lot."
                     </p>
                   </div>
                 </Card>
