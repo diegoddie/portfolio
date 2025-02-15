@@ -108,7 +108,7 @@ export default function About() {
               <div
                 className="md:w-2/3"
               >
-                <Card className="p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+                <Card className="p-3 md:p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
                   <div className="flex flex-row justify-center md:justify-start items-center gap-4">
                     <Cpu className="text-primary w-6 h-6" />
                     <h3 className="text-lg font-semibold">Stack & Tools</h3>
@@ -116,16 +116,16 @@ export default function About() {
                   <div className="space-y-6 py-4">
                   <Tabs defaultValue="frontend" className="w-full">
                     <TabsList className="grid w-full grid-cols-3 mb-5 bg-slate-200 dark:bg-slate-500">
-                      <TabsTrigger value="frontend" className="flex items-center gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
-                        <Layers className="w-5 h-5" />
+                      <TabsTrigger value="frontend" className="flex items-center gap-1 md:gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
+                        <Layers className="w-4 h-4 md:w-5 md:h-5" />
                         Frontend
                       </TabsTrigger>
-                      <TabsTrigger value="backend" className="flex items-center gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
-                        <Database className="w-5 h-5" />
+                      <TabsTrigger value="backend" className="flex items-center gap-1 md:gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
+                        <Database className="w-4 h-4 md:w-5 md:h-5" />
                         Backend
                       </TabsTrigger>
-                      <TabsTrigger value="tools" className="flex items-center gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
-                        <Wrench className="w-5 h-5" />
+                      <TabsTrigger value="tools" className="flex items-center gap-1 md:gap-2 data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700">
+                        <Wrench className="w-4 h-4 md:w-5 md:h-5" />
                         Tools
                       </TabsTrigger>
                     </TabsList>
