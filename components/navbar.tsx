@@ -33,7 +33,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 py-3 z-50"
+      className="md:sticky top-0 py-3 z-50"
     >
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between py-4">
