@@ -2,6 +2,7 @@
 import MyClinic from '@/public/projects/myclinic.png'
 import Portfolio from '@/public/projects/portfolio.png'
 import Web3Raise from '@/public/projects/web3raise.png'
+import Resumatcher from '@/public/projects/resumatcher.png'
 import { StaticImageData } from 'next/image'
 // Define the Project type
 export type Project = {
@@ -18,6 +19,16 @@ export type Project = {
   export const projects: Project[] = [
     {
       id: 1,
+      title: "Resumatcher",
+      description:
+        "A SaaS application that allows users to upload their CV and automatically find the most relevant job opportunities through an AI-based matching system.",
+      image: Resumatcher,
+      technologies: ["Next.js", "TypeScript", "Python", "FastAPI", "Docker", "Stripe", "Hugging Face", "OpenAI"],
+      liveUrl: "https://www.resumatcher.xyz/",
+      githubUrl: "https://github.com/diegoddie/resumatcher",
+    },
+    {
+      id: 2,
       title: "MyClinic",
       description:
         "A full-stack application for managing every aspect of a clinic, from patient records to appointments scheduling and admin dashboard.",
@@ -25,15 +36,6 @@ export type Project = {
       technologies: ["Next.js", "TypeScript", "Shadcn", "Supabase", "Tanstack Query", "Resend"],
       liveUrl: "https://www.myclinic.tech/",
       githubUrl: "https://github.com/diegoddie/MyClinic",
-    },
-    {
-      id: 2,
-      title: "Portfolio",
-      description: "My personal portfolio website, where I showcase my projects and give a brief introduction about myself.",
-      image: Portfolio,
-      technologies: ["Next.js", "Typescript", "Shadcn", "Resend", "Framer Motion"],
-      liveUrl: "https://www.diegolauricella.com",
-      githubUrl: "https://github.com/diegoddie/portfolio",
     },
     {
       id: 3,
