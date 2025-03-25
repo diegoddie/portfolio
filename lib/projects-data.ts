@@ -1,6 +1,4 @@
-
 import MyClinic from '@/public/projects/myclinic.png'
-import Portfolio from '@/public/projects/portfolio.png'
 import Web3Raise from '@/public/projects/web3raise.png'
 import Resumatcher from '@/public/projects/resumatcher.png'
 import { StaticImageData } from 'next/image'
