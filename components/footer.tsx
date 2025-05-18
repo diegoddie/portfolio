@@ -4,7 +4,7 @@ import { socialItems } from "@/lib/social"; // Importa i social dal file separat
 export default function Footer() {
   return (
     <footer className="bg-primary pt-7 pb-2">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-3">
         <div className="flex flex-col space-y-2 md:space-y-6">
           {/* Main footer content */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">

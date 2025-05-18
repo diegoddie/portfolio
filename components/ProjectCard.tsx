@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Image from "next/image"
 import Link from "next/link"
 import { ExternalLink } from "lucide-react"
-import { FaGithub } from "react-icons/fa"
+import { FaGithub, FaYoutube } from "react-icons/fa"
 import { Badge } from "./ui/badge"
 
 function ProjectCard({
@@ -13,6 +13,7 @@ function ProjectCard({
     technologies,
     liveUrl,
     githubUrl,
+    youtubeUrl,
   }: Project) {
     return (
         <Card className="max-w-md h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
@@ -37,15 +38,20 @@ function ProjectCard({
           </CardContent>
           <CardFooter className="flex justify-between mt-4">
             {liveUrl && (
-                
-              <Link href={liveUrl} target="_blank" className="flex justify-center items-center gap-2 font-semibold text-lg hover:font-bold">
-                  <ExternalLink className="h-6 w-6" />
+              <Link href={liveUrl} target="_blank" className="flex justify-center items-center gap-2 font-semibold hover:font-bold text-sm">
+                  <ExternalLink className="h-5 w-5" />
                   Live Demo
               </Link>
             )}
+            {youtubeUrl && (
+              <Link href={youtubeUrl} target="_blank" className="flex justify-center items-center gap-2 font-semibold hover:font-bold text-sm">
+                  <FaYoutube className="h-5 w-5" />
+                  YouTube
+              </Link>
+            )}
             {githubUrl && (
-              <Link href={githubUrl} target="_blank" className="flex justify-center items-center gap-2 font-semibold text-lg hover:font-bold">
-                  <FaGithub className="h-6 w-6" />
+              <Link href={githubUrl} target="_blank" className="flex justify-center items-center gap-2 font-semibold hover:font-bold text-sm">
+                  <FaGithub className="h-5 w-5" />
                   GitHub
               </Link>
             )}
