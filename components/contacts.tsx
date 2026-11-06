@@ -91,7 +91,7 @@ export default function Contacts() {
         </div>
 
         <div className="container mx-auto items-center justify-center flex">
-          <Card className="p-6 w-full max-w-xl border border-primary shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+          <Card className="p-6 w-full max-w-xl border border-primary shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

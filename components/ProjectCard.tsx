@@ -16,7 +16,7 @@ function ProjectCard({
     youtubeUrl,
   }: Project) {
     return (
-        <Card className="max-w-md h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+        <Card className="max-w-md h-full border border-primary text-black shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
           <CardHeader>
             <CardTitle className="text-2xl font-semibold text-black dark:text-white">{title}</CardTitle>
             <CardDescription className="text-gray-600 dark:text-gray-300 text-md tracking-wide min-h-[100px]">{description}</CardDescription>
