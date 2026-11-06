@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { z } from "zod";
 import { ContactFormSchema } from "@/lib/schemas/contactSchema";
 import { EmailContactForm } from "@/components/EmailTemplates/email-contact-form";
 
@@ -16,7 +17,7 @@ export const sendEmail = async (formData: FormData) => {
   if (!validatedFields.success) {
     return {
       success: false,
-      errors: validatedFields.error.flatten().fieldErrors,
+      errors: z.flattenError(validatedFields.error).fieldErrors,
     };
   }
 
