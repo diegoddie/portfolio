@@ -50,7 +50,7 @@ export default function About() {
               <div
                 className="md:w-1/3"
               >
-                <Card className="p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+                <Card className="p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
                   <div className="flex flex-row justify-center md:justify-start items-center gap-4">
                     <GraduationCap className="text-primary w-6 h-6" />
                     <h3 className="text-lg font-semibold">Education</h3>
@@ -87,7 +87,7 @@ export default function About() {
               <div
                 className="md:w-2/3"
               >
-                <Card className="space-y-2 md:space-y-10 p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+                <Card className="space-y-2 md:space-y-10 p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
                   <div className="flex flex-row justify-center md:justify-start items-center gap-4">
                     <User className="text-primary w-6 h-6" />
                     <h3 className="text-lg font-semibold">About me</h3>
@@ -108,7 +108,7 @@ export default function About() {
               <div
                 className="md:w-2/3"
               >
-                <Card className="p-3 md:p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+                <Card className="p-3 md:p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
                   <div className="flex flex-row justify-center md:justify-start items-center gap-4">
                     <Cpu className="text-primary w-6 h-6" />
                     <h3 className="text-lg font-semibold">Stack & Tools</h3>
@@ -147,7 +147,7 @@ export default function About() {
               <div
                 className="md:w-1/3"
               >
-                <Card className="p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-gradient-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-sm">
+                <Card className="p-6 h-full border border-primary text-black shadow-lg shadow-primary/60 bg-transparent bg-linear-to-br from-white to-primary/40 dark:from-slate-800 dark:to-primary/30 dark:text-white backdrop-blur-xs">
                   <div className="flex flex-row justify-center md:justify-start items-center gap-4">
                     <Trophy className="text-primary w-6 h-6" />
                     <h3 className="text-lg font-semibold">

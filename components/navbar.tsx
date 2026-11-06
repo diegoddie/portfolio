@@ -61,7 +61,7 @@ const Navbar = () => {
               className="absolute inset-0 z-0 rounded-full p-1 px-4 py-2"
             />
 
-            <div className="relative flex items-center rounded-full border border-white/10 bg-background p-1 backdrop-blur-sm z-10">
+            <div className="relative flex items-center rounded-full border border-white/10 bg-background p-1 backdrop-blur-xs z-10">
               {navItems.map(({ label, href }) => (
                 <Link
                   key={label}
@@ -103,7 +103,7 @@ const Navbar = () => {
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Link className="bg-primary text-primary-foreground shadow hover:bg-primary/90 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hidden md:inline-flex text-lg h-9 px-6 py-6 " href="/Resume.pdf" download target="_blank">
+            <Link className="bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hidden md:inline-flex text-lg h-9 px-6 py-6 " href="/Resume.pdf" download target="_blank">
                 Download CV
                 <Download className="ml-1 h-6 w-6 font-bold" />
             </Link>

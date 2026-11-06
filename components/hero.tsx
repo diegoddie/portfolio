@@ -14,7 +14,7 @@ export default function Hero() {
   
   return (
     <section
-      className="md:flex-grow flex justify-center items-center py-6"
+      className="md:grow flex justify-center items-center py-6"
       id="home"
     >
       <div className="container mx-auto px-4 text-center space-y-8 md:space-y-10">
@@ -88,7 +88,7 @@ export default function Hero() {
               className="absolute inset-0 z-0 rounded-lg"
             />
             <Link
-              className="h-9 bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-lg py-6 px-6 relative group"
+              className="h-9 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-lg py-6 px-6 relative group"
               href="#contacts"
             >
               Contact Me

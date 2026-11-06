@@ -37,7 +37,7 @@ export function GlowEffect({
   scale = 1,
   duration = 5,
 }: GlowEffectProps) {
-  const BASE_TRANSITION = {
+  const BASE_TRANSITION: Transition = {
     repeat: Infinity,
     duration: duration,
     ease: 'linear',
@@ -118,7 +118,7 @@ export function GlowEffect({
 
     const presets = {
       softest: 'blur-xs',
-      soft: 'blur-sm',
+      soft: 'blur-xs',
       medium: 'blur-md',
       strong: 'blur-lg',
       stronger: 'blur-xl',
@@ -142,7 +142,7 @@ export function GlowEffect({
       animate={animations[mode]}
       className={cn(
         'pointer-events-none absolute inset-0 h-full w-full',
-        'scale-[var(--scale)] transform-gpu',
+        'scale-(--scale) transform-gpu',
         getBlurClass(blur),
         className
       )}
